@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Exam.Models.Student>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@Html.ActionLink("Create","Create")
+<ul>
+    @foreach (var S in Model)
+    {
+        <li>@S.Name.ToString()</li>
+    }
+</ul>
+

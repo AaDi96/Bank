@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Create</h2>
+<h3>Book</h3>
+@using (Html.BeginForm("Form", "Form", FormMethod.Post))
+{
+    @Html.TextBoxFor(m => m.Name)
+    @Html.TextBoxFor(m => m.ISBN)
+}
